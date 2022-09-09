@@ -81,7 +81,7 @@ void DemoSyoten_Init(Actor* thisx, PlayState* play) {
             this->actor.child =
                 Actor_SpawnAsChild(&play->actorCtx, &this->actor, play, ACTOR_EFF_DUST, this->actor.world.pos.x,
                                    this->actor.world.pos.y, this->actor.world.pos.z, 0, this->actor.shape.rot.y, 0, 0);
-            this->unk_3F0 = 0x215;
+            this->unk_3F0 = 533;
             Actor_SetScale(&this->actor, 0.05f);
             break;
 
@@ -91,14 +91,14 @@ void DemoSyoten_Init(Actor* thisx, PlayState* play) {
             this->unk_3E0 = Lib_SegmentedToVirtual(&object_syoten_Matanimheader_001448);
             this->unk_3E4 |= 1;
             this->actionFunc = func_80C16BD4;
-            this->unk_3F0 = 0x215;
+            this->unk_3F0 = 533;
             Actor_SetScale(&this->actor, 0.05f);
             break;
 
         case DEMOSYOTEN_F_2:
             this->unk_3DC = object_syoten_DL_001730;
             this->unk_3E0 = Lib_SegmentedToVirtual(&object_syoten_Matanimheader_0018B8);
-            this->unk_3F0 = 0x216;
+            this->unk_3F0 = 534;
             this->actionFunc = func_80C16DD4;
             this->unk_3E4 |= 2;
             Actor_SetScale(&this->actor, 4.0f);
@@ -107,7 +107,7 @@ void DemoSyoten_Init(Actor* thisx, PlayState* play) {
         case DEMOSYOTEN_F_3:
             this->unk_3DC = object_syoten_DL_001DD0;
             this->unk_3E0 = Lib_SegmentedToVirtual(&object_syoten_Matanimheader_002B98);
-            this->unk_3F0 = 0x218;
+            this->unk_3F0 = 536;
             this->unk_3E4 |= 8;
             this->actionFunc = func_80C16EAC;
             Actor_SetScale(&this->actor, 0.5f);
@@ -118,7 +118,7 @@ void DemoSyoten_Init(Actor* thisx, PlayState* play) {
             this->unk_3E0 = Lib_SegmentedToVirtual(&object_syoten_Matanimheader_002B88);
             this->unk_3E4 |= 2;
             this->actionFunc = func_80C17008;
-            this->unk_3F0 = 0x217;
+            this->unk_3F0 = 535;
             this->unk_3E4 |= 1;
             this->unk_3E4 |= 8;
             this->actor.draw = func_80C17690;

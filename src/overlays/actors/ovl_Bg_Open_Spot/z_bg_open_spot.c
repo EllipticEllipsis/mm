@@ -49,8 +49,8 @@ void BgOpenSpot_Update(Actor* thisx, PlayState* play) {
     BgOpenSpot* this = THIS;
     u32 action;
 
-    if (Cutscene_CheckActorAction(play, 0x7D)) {
-        action = play->csCtx.actorActions[Cutscene_GetActorActionIndex(play, 0x7D)]->action;
+    if (Cutscene_CheckActorAction(play, 125)) {
+        action = play->csCtx.actorActions[Cutscene_GetActorActionIndex(play, 125)]->action;
         if (action == 1) {
             this->actor.draw = NULL;
         } else if (action == 2) {

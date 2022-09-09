@@ -49,7 +49,7 @@ void EffLastday_Init(Actor* thisx, PlayState* play2) {
         case EFFLASTDAY_PARAMS_1:
             this->dList = object_lastday_DL_000510;
             this->matAnim = Lib_SegmentedToVirtual(object_lastday_Matanimheader_000608);
-            this->csActionCmd = 0x1FC;
+            this->csActionCmd = 508;
             this->actionFunc = func_80BEBDF8;
             Actor_SetScale(&this->actor, 1.0f);
             break;
@@ -57,7 +57,7 @@ void EffLastday_Init(Actor* thisx, PlayState* play2) {
         case EFFLASTDAY_PARAMS_2:
             this->dList = object_lastday_DL_000210;
             this->matAnim = Lib_SegmentedToVirtual(object_lastday_Matanimheader_000308);
-            this->csActionCmd = 0x1FD;
+            this->csActionCmd = 509;
             this->actionFunc = func_80BEBEB8;
             Actor_SetScale(&this->actor, 0.5f);
             break;
@@ -65,7 +65,7 @@ void EffLastday_Init(Actor* thisx, PlayState* play2) {
         case EFFLASTDAY_PARAMS_3:
             this->dList = object_lastday_DL_000060;
             this->matAnim = Lib_SegmentedToVirtual(object_lastday_Matanimheader_000148);
-            this->csActionCmd = 0x1FE;
+            this->csActionCmd = 510;
             this->actionFunc = func_80BEBF78;
             Actor_SetScale(&this->actor, 0.2f);
             this->actor.home.rot.z = 0;
@@ -74,7 +74,7 @@ void EffLastday_Init(Actor* thisx, PlayState* play2) {
         default:
             this->dList = object_lastday_DL_000370;
             this->matAnim = Lib_SegmentedToVirtual(object_lastday_Matanimheader_000448);
-            this->csActionCmd = 0x1FB;
+            this->csActionCmd = 507;
             this->actionFunc = func_80BEBD0C;
             Actor_SetScale(&this->actor, 1.0f);
             Actor_SpawnAsChild(&play->actorCtx, &this->actor, play, ACTOR_EFF_LASTDAY, this->actor.world.pos.x,

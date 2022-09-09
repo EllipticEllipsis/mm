@@ -81,7 +81,7 @@ void DmChar04_Destroy(Actor* thisx, PlayState* play) {
 }
 
 void func_80AABE34(DmChar04* this, PlayState* play) {
-    u16 params = this->actor.params + 0x71;
+    u16 params = this->actor.params + 113;
 
     if (Cutscene_CheckActorAction(play, params)) {
         s32 actionIndex = Cutscene_GetActorActionIndex(play, params);
@@ -99,7 +99,7 @@ void func_80AABE34(DmChar04* this, PlayState* play) {
         }
         Cutscene_ActorTranslateAndYaw(&this->actor, play, actionIndex);
     } else {
-        this->csAction = 0x63;
+        this->csAction = 99;
     }
 }
 

@@ -188,7 +188,7 @@ void EnGiant_Init(Actor* thisx, PlayState* play) {
             return;
         }
 
-        this->actorActionCommand = 0x1C5;
+        this->actorActionCommand = 453;
         Actor_SetScale(&this->actor, 0.32f);
         this->actionFunc = EnGiant_PerformClockTowerSuccessActions;
         Animation_Change(&this->skelAnime, &gGiantRaisedArmsStartAnim, 0.0f,

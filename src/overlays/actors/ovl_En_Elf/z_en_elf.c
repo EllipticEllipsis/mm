@@ -1016,7 +1016,7 @@ void func_8088E850(EnElf* this, PlayState* play) {
 
     func_8088E60C(this, play);
 
-    if (!Cutscene_CheckActorAction(play, 0xC9)) {
+    if (!Cutscene_CheckActorAction(play, 201)) {
         this->actor.shape.rot.y = this->unk_258;
     }
 }

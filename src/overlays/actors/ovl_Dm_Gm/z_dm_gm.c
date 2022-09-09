@@ -206,8 +206,8 @@ void func_80C24A00(DmGm* this, PlayState* play) {
             this->unk_2CC = this->unk_2C8;
         }
 
-        if (Cutscene_CheckActorAction(play, 0x22D)) {
-            sp20 = Cutscene_GetActorActionIndex(play, 0x22D);
+        if (Cutscene_CheckActorAction(play, 557)) {
+            sp20 = Cutscene_GetActorActionIndex(play, 557);
             action = play->csCtx.actorActions[sp20]->action;
 
             if (this->unk_2B0 != (action & 0xFF)) {

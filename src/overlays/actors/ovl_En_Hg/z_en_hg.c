@@ -155,7 +155,7 @@ void func_80BCF354(EnHg* this) {
 void func_80BCF398(EnHg* this, PlayState* play) {
     if (this->actor.colChkInfo.health == 1) {
         if ((this->actor.xzDistToPlayer < 200.0f && this->actor.playerHeightRel < 40.0f) &&
-            !Cutscene_CheckActorAction(play, 0x1E3)) {
+            !Cutscene_CheckActorAction(play, 483)) {
             func_80BCF468(this);
         }
         if ((gSaveContext.sceneSetupIndex == 0 && play->csCtx.currentCsIndex == 0) &&

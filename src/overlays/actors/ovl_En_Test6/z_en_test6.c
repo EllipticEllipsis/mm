@@ -832,8 +832,8 @@ void func_80A92950(EnTest6* this, PlayState* play) {
     s32 i;
     s32 temp_v0;
 
-    if (Cutscene_CheckActorAction(play, 0x1F9)) {
-        temp_v0 = Cutscene_GetActorActionIndex(play, 0x1F9);
+    if (Cutscene_CheckActorAction(play, 505)) {
+        temp_v0 = Cutscene_GetActorActionIndex(play, 505);
         this->unk_274 = play->csCtx.actorActions[temp_v0]->action;
 
         switch (this->unk_274) {

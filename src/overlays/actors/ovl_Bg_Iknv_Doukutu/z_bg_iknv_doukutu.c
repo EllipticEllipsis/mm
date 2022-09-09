@@ -51,7 +51,7 @@ void BgIknvDoukutu_Init(Actor* thisx, PlayState* play) {
     switch (BGIKNVDOUKUTU_GET_F(&this->dyna.actor)) {
         case BGIKNVDOUKUTU_F_0:
             this->actionFunc = func_80BD71BC;
-            this->csAction = 0x204;
+            this->csAction = 516;
             this->unk_160 = 1.0f;
             if ((gSaveContext.save.weekEventReg[14] & 4) || (gSaveContext.save.weekEventReg[52] & 0x20)) {
                 this->dyna.actor.draw = func_80BD7768;
@@ -65,7 +65,7 @@ void BgIknvDoukutu_Init(Actor* thisx, PlayState* play) {
         case BGIKNVDOUKUTU_F_1:
             Actor_SetScale(&this->dyna.actor, 1.0f);
             this->dyna.actor.draw = func_80BD7820;
-            this->csAction = 0x204;
+            this->csAction = 516;
             DynaPolyActor_Init(&this->dyna, 0);
             CollisionHeader_GetVirtual(&object_iknv_obj_Colheader_012788, &colHeader);
             this->dyna.bgId = DynaPoly_SetBgActor(play, &play->colCtx.dyna, &this->dyna.actor, colHeader);
@@ -75,7 +75,7 @@ void BgIknvDoukutu_Init(Actor* thisx, PlayState* play) {
             break;
 
         case BGIKNVDOUKUTU_F_2:
-            this->csAction = 0x204;
+            this->csAction = 516;
             this->dyna.actor.draw = func_80BD78C4;
             DynaPolyActor_Init(&this->dyna, 0);
             CollisionHeader_GetVirtual(&object_iknv_obj_Colheader_0117C8, &colHeader);

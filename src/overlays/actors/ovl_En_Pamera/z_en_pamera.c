@@ -695,8 +695,8 @@ void func_80BD9C70(EnPamera* this, PlayState* play) {
 s32 func_80BD9CB8(EnPamera* this, PlayState* play) {
     s32 actionIndex;
 
-    if (Cutscene_CheckActorAction(play, 0x1E5)) {
-        actionIndex = Cutscene_GetActorActionIndex(play, 0x1E5);
+    if (Cutscene_CheckActorAction(play, 485)) {
+        actionIndex = Cutscene_GetActorActionIndex(play, 485);
         if (this->unk_326 != play->csCtx.actorActions[actionIndex]->action) {
             this->unk_326 = play->csCtx.actorActions[actionIndex]->action;
 

@@ -570,7 +570,7 @@ void func_80B32B3C(EnZoraegg* this, PlayState* play) {
 
 void func_80B32B70(EnZoraegg* this, PlayState* play) {
     func_80B31C40(this, play);
-    if (Cutscene_CheckActorAction(play, 0x1C9)) {
+    if (Cutscene_CheckActorAction(play, 457)) {
         Actor_MarkForDeath(&this->actor);
     }
 }
@@ -583,7 +583,7 @@ void func_80B32BB8(EnZoraegg* this, PlayState* play) {
         this->actionFunc = func_80B32B70;
     }
 
-    if (Cutscene_CheckActorAction(play, 0x1C9)) {
+    if (Cutscene_CheckActorAction(play, 457)) {
         Actor_MarkForDeath(&this->actor);
     }
 }

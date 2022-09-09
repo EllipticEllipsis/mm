@@ -75,7 +75,7 @@ void EnOsk_Init(Actor* thisx, PlayState* play) {
                                this->jointTable, this->morphTable, 7);
             Animation_PlayLoop(&this->skelAnime, &object_ikn_demo_Anim_006808);
             this->actionFunc = func_80BF656C;
-            this->unk_258 = 0x210;
+            this->unk_258 = 528;
             break;
 
         case ENOSK_2:
@@ -83,7 +83,7 @@ void EnOsk_Init(Actor* thisx, PlayState* play) {
                                this->jointTable, this->morphTable, 7);
             Animation_PlayLoop(&this->skelAnime, &object_ikn_demo_Anim_006808);
             this->actionFunc = func_80BF6A20;
-            this->unk_258 = 0x211;
+            this->unk_258 = 529;
             break;
 
         default:
@@ -92,7 +92,7 @@ void EnOsk_Init(Actor* thisx, PlayState* play) {
                                this->jointTable, this->morphTable, 17);
             Animation_PlayLoop(&this->skelAnime, &object_ikn_demo_Anim_0000B8);
             this->actionFunc = func_80BF61EC;
-            this->unk_258 = 0x212;
+            this->unk_258 = 530;
             this->actor.home.rot.z = 0;
             this->unk_25C = 0.0f;
             break;

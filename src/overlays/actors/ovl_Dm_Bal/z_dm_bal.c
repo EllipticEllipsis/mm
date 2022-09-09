@@ -77,8 +77,8 @@ void func_80C1EAE8(DmBal* this, PlayState* play) {
     static u16 D_80C1F2C0 = 0x63;
     s32 actionIndex;
 
-    if (Cutscene_CheckActorAction(play, 0x238)) {
-        actionIndex = Cutscene_GetActorActionIndex(play, 0x238);
+    if (Cutscene_CheckActorAction(play, 568)) {
+        actionIndex = Cutscene_GetActorActionIndex(play, 568);
 
         if (D_80C1F2C0 != play->csCtx.actorActions[actionIndex]->action) {
             D_80C1F2C0 = play->csCtx.actorActions[actionIndex]->action;

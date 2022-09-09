@@ -34,7 +34,7 @@ static s16 sObjectBankIndices[] = { OBJECT_GI_MASK14, OBJECT_GI_SWORD_4 };
 
 static s16 sGetItemDraws[] = { GID_MASK_GREAT_FAIRY, GID_SWORD_GREAT_FAIRY };
 
-static u16 sCsActionIndices[] = { 0x6E, 0x236 };
+static u16 sCsActionIndices[] = { 110, 566 };
 
 void DemoGetitem_Init(Actor* thisx, PlayState* play) {
     s32 pad;

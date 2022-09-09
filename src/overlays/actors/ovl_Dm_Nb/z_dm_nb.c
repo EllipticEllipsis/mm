@@ -51,8 +51,8 @@ void func_80C1DF18(DmNb* this, PlayState* play) {
             this->unk1F8 = 1;
             this->unk1F4 = this->unk1F0;
         }
-        if (Cutscene_CheckActorAction(play, 0x232)) {
-            csActionIndex = Cutscene_GetActorActionIndex(play, 0x232);
+        if (Cutscene_CheckActorAction(play, 562)) {
+            csActionIndex = Cutscene_GetActorActionIndex(play, 562);
             csAction = play->csCtx.actorActions[csActionIndex]->action;
             if (this->unk1EC != (u8)csAction) {
                 this->unk1EC = csAction;

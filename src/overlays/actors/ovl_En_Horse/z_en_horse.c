@@ -3287,8 +3287,8 @@ void func_808846F0(EnHorse* this, PlayState* play) {
 void func_80884718(EnHorse* this, PlayState* play) {
     CsCmdActorAction* action;
 
-    if (Cutscene_CheckActorAction(play, 0x70)) {
-        this->unk_530 = Cutscene_GetActorActionIndex(play, 0x70);
+    if (Cutscene_CheckActorAction(play, 112)) {
+        this->unk_530 = Cutscene_GetActorActionIndex(play, 112);
         action = play->csCtx.actorActions[this->unk_530];
 
         this->unk_1EC |= 0x20;

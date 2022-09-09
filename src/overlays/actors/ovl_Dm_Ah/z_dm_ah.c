@@ -133,8 +133,8 @@ void func_80C1D7FC(DmAh* this, PlayState* play) {
             this->unk_29C = true;
             this->animationIndex2 = this->animationIndex;
         }
-        if (Cutscene_CheckActorAction(play, 0x232)) {
-            actionIndex = Cutscene_GetActorActionIndex(play, 0x232);
+        if (Cutscene_CheckActorAction(play, 562)) {
+            actionIndex = Cutscene_GetActorActionIndex(play, 562);
             csAction = play->csCtx.actorActions[actionIndex]->action;
             if (this->action != (u8)csAction) {
                 this->action = csAction;

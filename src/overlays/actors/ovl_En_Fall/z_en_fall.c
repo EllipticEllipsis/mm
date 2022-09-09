@@ -359,7 +359,7 @@ void EnFall_CrashingMoon_HandleGiantsCutscene(EnFall* this, PlayState* play) {
 
 void EnFall_CrashingMoon_PerformCutsceneActions(EnFall* this, PlayState* play) {
     EnFall_CrashingMoon_HandleGiantsCutscene(this, play);
-    if (Cutscene_CheckActorAction(play, 0x85)) {
+    if (Cutscene_CheckActorAction(play, 133)) {
         if (Cutscene_CheckActorAction(play, 133) &&
             play->csCtx.actorActions[Cutscene_GetActorActionIndex(play, 133)]->action == 1) {
             this->actor.draw = NULL;
@@ -625,7 +625,7 @@ void EnFall_Fireball_Update(Actor* thisx, PlayState* play) {
         this->actor.draw = NULL;
     }
 
-    if (Cutscene_CheckActorAction(play, 0x1C2) && this->fireballAlpha > 0) {
+    if (Cutscene_CheckActorAction(play, 450) && this->fireballAlpha > 0) {
         func_8019F128(NA_SE_EV_MOON_FALL_LAST - SFX_FLAG);
     }
     Actor_SetScale(&this->actor, this->scale * 1.74f);

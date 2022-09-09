@@ -381,7 +381,7 @@ void func_80BD1C84(EnZov* this, PlayState* play) {
         func_800B8614(&this->picto.actor, play, 120.0f);
     }
 
-    if (Cutscene_CheckActorAction(play, 0x1F8)) {
+    if (Cutscene_CheckActorAction(play, 504)) {
         this->actionFunc = func_80BD1BF0;
         func_80BD1BF0(this, play);
     }
@@ -480,7 +480,7 @@ void EnZov_Update(Actor* thisx, PlayState* play) {
 
     this->actionFunc(this, play);
 
-    if (!Cutscene_CheckActorAction(play, 0x1F8)) {
+    if (!Cutscene_CheckActorAction(play, 504)) {
         this->unk_320 &= ~0x10;
     }
 

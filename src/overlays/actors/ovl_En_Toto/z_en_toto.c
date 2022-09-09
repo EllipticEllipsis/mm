@@ -707,7 +707,7 @@ void EnToto_Update(Actor* thisx, PlayState* play) {
     EnToto* this = THIS;
     s32 pad;
 
-    if (Cutscene_CheckActorAction(play, 0x20D)) {
+    if (Cutscene_CheckActorAction(play, 525)) {
         func_80BA4CB4(this, play);
     } else {
         D_80BA51B8[this->actionFuncIndex](this, play);

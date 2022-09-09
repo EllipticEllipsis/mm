@@ -74,8 +74,8 @@ void func_80AAB5F8(DmChar03* this, PlayState* play) {
 }
 
 void func_80AAB644(DmChar03* this, PlayState* play) {
-    if (Cutscene_CheckActorAction(play, 0x88)) {
-        s32 index = Cutscene_GetActorActionIndex(play, 0x88);
+    if (Cutscene_CheckActorAction(play, 136)) {
+        s32 index = Cutscene_GetActorActionIndex(play, 136);
 
         if (play->csCtx.actorActions[index]->action == 4) {
             this->unk_18E = true;
@@ -92,8 +92,8 @@ void DmChar03_DoNothing(DmChar03* this, PlayState* play) {
 void func_80AAB710(DmChar03* this, PlayState* play) {
     u8 shouldChangeAnim = true;
 
-    if (Cutscene_CheckActorAction(play, 0x88)) {
-        s32 index = Cutscene_GetActorActionIndex(play, 0x88);
+    if (Cutscene_CheckActorAction(play, 136)) {
+        s32 index = Cutscene_GetActorActionIndex(play, 136);
 
         if (play->csCtx.frames == play->csCtx.actorActions[index]->startFrame) {
             switch (play->csCtx.actorActions[index]->action) {
@@ -138,8 +138,8 @@ void func_80AAB838(DmChar03* this, PlayState* play) {
 void DmChar03_Update(Actor* thisx, PlayState* play) {
     DmChar03* this = THIS;
 
-    if (Cutscene_CheckActorAction(play, 0x88) &&
-        (play->csCtx.actorActions[Cutscene_GetActorActionIndex(play, 0x88)]->action == 2)) {
+    if (Cutscene_CheckActorAction(play, 136) &&
+        (play->csCtx.actorActions[Cutscene_GetActorActionIndex(play, 136)]->action == 2)) {
         SkelAnime_Update(&this->skelAnime);
     }
     this->actionFunc(this, play);
@@ -161,8 +161,8 @@ void DmChar03_Draw(Actor* thisx, PlayState* play) {
     DmChar03* this = THIS;
 
     if (!this->unk_18E) {
-        if ((Cutscene_CheckActorAction(play, 0x88)) &&
-            (play->csCtx.actorActions[Cutscene_GetActorActionIndex(play, 0x88)]->action != 1)) {
+        if ((Cutscene_CheckActorAction(play, 136)) &&
+            (play->csCtx.actorActions[Cutscene_GetActorActionIndex(play, 136)]->action != 1)) {
             func_8012C28C(play->state.gfxCtx);
             SkelAnime_DrawTransformFlexOpa(play, this->skelAnime.skeleton, this->skelAnime.jointTable,
                                            this->skelAnime.dListCount, DmChar03_OverrideLimbDraw, DmChar03_PostLimbDraw,

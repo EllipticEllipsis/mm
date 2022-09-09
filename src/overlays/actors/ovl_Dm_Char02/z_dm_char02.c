@@ -103,8 +103,8 @@ void DmChar02_PerformCutsceneActions(DmChar02* this, PlayState* play) {
     u8 shouldChangeAnimation = true;
     s32 actionIndex;
 
-    if (Cutscene_CheckActorAction(play, 0x83)) {
-        actionIndex = Cutscene_GetActorActionIndex(play, 0x83);
+    if (Cutscene_CheckActorAction(play, 131)) {
+        actionIndex = Cutscene_GetActorActionIndex(play, 131);
         if (play->csCtx.frames == play->csCtx.actorActions[actionIndex]->startFrame) {
             switch (play->csCtx.actorActions[actionIndex]->action) {
                 default:
@@ -174,8 +174,8 @@ void DmChar02_Draw(Actor* thisx, PlayState* play) {
 
     if ((play->csCtx.state == 0) && (this->actor.world.pos.y < 100.0f)) {
         shouldDraw = true;
-    } else if (Cutscene_CheckActorAction(play, 0x6B)) {
-        switch (play->csCtx.actorActions[Cutscene_GetActorActionIndex(play, 0x6B)]->action) {
+    } else if (Cutscene_CheckActorAction(play, 107)) {
+        switch (play->csCtx.actorActions[Cutscene_GetActorActionIndex(play, 107)]->action) {
             case 0x17:
             case 0x1C:
             case 0x26:

@@ -133,8 +133,8 @@ void DmZl_DoNothing(DmZl* this, PlayState* play) {
 void DmZl_UpdateCutscene(DmZl* this, PlayState* play) {
     s32 actionIndex;
 
-    if (Cutscene_CheckActorAction(play, 0x66)) {
-        actionIndex = Cutscene_GetActorActionIndex(play, 0x66);
+    if (Cutscene_CheckActorAction(play, 102)) {
+        actionIndex = Cutscene_GetActorActionIndex(play, 102);
         if (play->csCtx.frames == play->csCtx.actorActions[actionIndex]->startFrame) {
             s16 nextAnimIndex = ZELDA_ANIM_FACING_AWAY;
 

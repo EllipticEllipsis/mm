@@ -140,8 +140,8 @@ void func_80AB2268(DmChar09* this, PlayState* play) {
         temp = true;
     }
 
-    if (Cutscene_CheckActorAction(play, 0x1F7) && temp) {
-        actionIndex = Cutscene_GetActorActionIndex(play, 0x1F7);
+    if (Cutscene_CheckActorAction(play, 503) && temp) {
+        actionIndex = Cutscene_GetActorActionIndex(play, 503);
         if (this->unk_22F != play->csCtx.actorActions[actionIndex]->action) {
             this->unk_22F = play->csCtx.actorActions[actionIndex]->action;
             switch (play->csCtx.actorActions[actionIndex]->action) {

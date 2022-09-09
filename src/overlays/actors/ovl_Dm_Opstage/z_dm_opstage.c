@@ -73,8 +73,8 @@ void DmOpstage_FollowCutsceneScript(DmOpstage* this, PlayState* play) {
     s32 actionIndex;
 
     if (DMOPSTAGE_GET_TYPE(&this->dyna.actor) == DMOPSTAGE_TYPE_GROUND) {
-        if (Cutscene_CheckActorAction(play, 0x73)) {
-            actionIndex = Cutscene_GetActorActionIndex(play, 0x73);
+        if (Cutscene_CheckActorAction(play, 115)) {
+            actionIndex = Cutscene_GetActorActionIndex(play, 115);
             if (play->csCtx.actorActions[actionIndex]->action == 2) {
                 this->dyna.actor.scale.x = 0.075f;
                 this->dyna.actor.scale.z = 0.3f;
@@ -84,10 +84,10 @@ void DmOpstage_FollowCutsceneScript(DmOpstage* this, PlayState* play) {
             }
             Cutscene_ActorTranslateAndYaw(&this->dyna.actor, play, actionIndex);
         }
-    } else if (Cutscene_CheckActorAction(play, DMOPSTAGE_GET_ACTORACTION(&this->dyna.actor) + 0x74)) {
+    } else if (Cutscene_CheckActorAction(play, DMOPSTAGE_GET_ACTORACTION(&this->dyna.actor) + 116)) {
         Cutscene_ActorTranslateAndYaw(
             &this->dyna.actor, play,
-            Cutscene_GetActorActionIndex(play, DMOPSTAGE_GET_ACTORACTION(&this->dyna.actor) + 0x74));
+            Cutscene_GetActorActionIndex(play, DMOPSTAGE_GET_ACTORACTION(&this->dyna.actor) + 116));
     }
 }
 

@@ -504,7 +504,7 @@ void func_80BBBCBC(EnZos* this, PlayState* play) {
 
 void func_80BBBD5C(EnZos* this, PlayState* play) {
     func_80BBB414(this, play);
-    if (!Cutscene_CheckActorAction(play, 0x1F5)) {
+    if (!Cutscene_CheckActorAction(play, 501)) {
         this->actionFunc = func_80BBBCBC;
         this->actor.flags |= ACTOR_FLAG_10000;
         func_800B8500(&this->actor, play, 1000.0f, 1000.0f, PLAYER_AP_MINUS1);

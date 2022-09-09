@@ -44,7 +44,7 @@ void EnFall2_Init(Actor* thisx, PlayState* play) {
     this->unk2DC = Lib_SegmentedToVirtual(object_fall2_Matanimheader_008840);
     Actor_SetScale(&this->actor, 0.02f);
     this->actionFunc = func_80C1B9D4;
-    this->csActionIndex = 0x231;
+    this->csActionIndex = 561;
     this->alphaLevel = 0.0f;
 }
 

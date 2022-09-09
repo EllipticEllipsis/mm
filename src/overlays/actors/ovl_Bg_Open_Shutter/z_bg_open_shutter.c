@@ -164,8 +164,8 @@ void BgOpenShutter_Update(Actor* thisx, PlayState* play2) {
     PlayState* play = play2;
     s32 index;
 
-    if (Cutscene_CheckActorAction(play, 0x7C)) {
-        index = Cutscene_GetActorActionIndex(play, 0x7C);
+    if (Cutscene_CheckActorAction(play, 124)) {
+        index = Cutscene_GetActorActionIndex(play, 124);
         if (play->csCtx.actorActions[index]->action == BGOPENSHUTTER_DOOR_OPEN) {
             if (this->actionFunc == func_80ACAD88) {
                 Actor_PlaySfxAtPos(&this->dyna.actor, NA_SE_EV_SLIDE_DOOR_OPEN);
